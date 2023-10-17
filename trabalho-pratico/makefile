@@ -1,13 +1,17 @@
 CFLAGS = -Wall -Iincludes -g
 
-#sources := src/main.c src/
+SOURCES := src/main.c #outros .c da pasta src
 
-#objects := $(sources:.c=.o)
+OBJECTS := $(SOURCES:.c=.o)
 
-#.PHONY: all clear
+.PHONY: all clean
 
-#EXECUTABLE := programa-principal
+EXECUTABLE := programa-principal
 
-#all: $(EXECUTABLE)
+all: $(EXECUTABLE)
 
-#
+programa-principal: $(OBJECTS)
+	gcc $(CFLAGS) $(OBJECTS) -o $(EXECUTABLE)
+
+clean: 
+	rm -f src/*.o $(EXECUTABLE)
