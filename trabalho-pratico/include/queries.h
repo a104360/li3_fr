@@ -1,6 +1,8 @@
 #ifndef QUERIES_H
 #define QUERIES_H
 
+
+// Listar o resumo de um user/reserva/voo, através do identificador
 void query1();
 
 void query2();

@@ -1,5 +1,5 @@
-#include "dataStrucs.h"
-#include "dataTypes.h"
+#include "../include/dataStructs.h"
+#include "../include/dataTypes.h"
 #include <time.h>
 #include <stdbool.h>
 
